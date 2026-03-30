@@ -6,6 +6,7 @@ import { BottomNav } from '@/components/BottomNav';
 import { MapTab } from '@/components/MapTab';
 import { ScoutTab } from '@/components/ScoutTab';
 import { ScrapbookTab } from '@/components/ScrapbookTab';
+import { AIAgent } from '@/components/AIAgent';
 import { motion, AnimatePresence } from 'motion/react';
 
 export default function Home() {
@@ -106,6 +107,9 @@ export default function Home() {
           )}
         </AnimatePresence>
       </div>
+
+      {/* AI Agent Overlay */}
+      <AIAgent />
 
       {/* Bottom Navigation */}
       <BottomNav activeTab={activeTab} onChangeTab={setActiveTab} />
